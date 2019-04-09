@@ -5,6 +5,7 @@ import (
 )
 
 /**
+循环
 for initialisation; condition; post {
 }
 */
