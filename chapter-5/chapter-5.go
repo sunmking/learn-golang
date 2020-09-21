@@ -1,8 +1,8 @@
 package main
 
 import (
+	"../rectangle"
 	"fmt"
-	"learn-golang/rectangle"
 	"log"
 )
 

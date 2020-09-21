@@ -17,6 +17,9 @@ func main() {
 	f5()
 	//切片
 	f6()
+	//
+	f7()
+	f8()
 }
 
 func f1() {
@@ -98,6 +101,8 @@ func f5() {
 }
 
 //切片
+//切片的修改
+//切片自己不拥有任何数据。它只是底层数组的一种表示。对切片所做的任何修改都会反映在底层数组中。
 func f6() {
 	a := [4]int{1, 2, 3, 4}
 
@@ -118,4 +123,65 @@ func f6() {
 	}
 	fmt.Println(x)
 
+}
+
+//切片的长度和容量
+//切片的长度是切片中的元素数。切片的容量是从创建切片索引开始的底层数组中元素数。
+func f7() {
+	fruitarray := [...]string{"apple", "orange", "grape", "mango", "water melon", "pine apple", "chikoo"}
+	fruitslice := fruitarray[1:3]
+	fmt.Printf("length of slice %d capacity %d", len(fruitslice), cap(fruitslice)) // length of is 2 and capacity is 6
+}
+
+// 创建切片
+func f8() {
+	v := make([]int, 7, 7)
+	fmt.Println(v)
+
+	s := []string{"s"}
+
+	s = append(s, "99")
+
+	fmt.Println(s)
+
+	var w []int
+
+	if w == nil {
+		fmt.Println("88")
+	}
+	w = append(w, 9, 10, 20)
+	fmt.Println(w)
+	是 := []string{"99"}
+	是1 := []string{"998", "99", "fff"}
+	是 = append(是, 是1...)
+
+	fmt.Println(是)
+
+	//切片的函数传递
+	one := []int{7, 8, 9}
+	fmt.Println(one)
+	subjectOne(one)
+	fmt.Println(one)
+
+	//多维切片
+	var name = [][]string{
+		{"1"},
+		{"3"},
+	}
+
+	fmt.Println(name)
+
+	// 切片复制
+
+	f := []string{"s", "d", "s1", "d2", "s4", "d4", "s14"}
+	fd := make([]string, len(f))
+
+	copy(fd, f)
+	fmt.Println(fd)
+}
+
+func subjectOne(num []int) {
+	for i := range num {
+		num[i] -= 2
+	}
 }

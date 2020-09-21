@@ -19,7 +19,7 @@ func main() {
 }
 
 //break
-//break 语句用于在完成正常执行之前突然终止 for 循环，之后程序将会在 for 循环下一行代码开始执行。
+//break 语句用于在完成正常执行之前突然终止 for 循环(跳出for循环)，之后程序将会在 for 循环下一行代码开始执行。
 func f1() {
 	for num := 0; num <= 20; num++ {
 		fmt.Println(num)
