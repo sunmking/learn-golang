@@ -24,6 +24,7 @@ func f1() {
 		fmt.Println("b after value is", a)
 		*b++
 		fmt.Println("b after value is", *b)
+		fmt.Println("a after value is", a)
 	}
 	// 向函数传递指针参数
 	aval := 40

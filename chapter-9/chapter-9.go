@@ -115,10 +115,10 @@ func f6() {
 	fmt.Println(b)
 
 	var x = [...]int{1, 2, 3, 4, 5, 6, 7}
-
 	xq := x[:3]
 	fmt.Println(x)
 	for i, _ := range xq {
+
 		xq[i]++
 	}
 	fmt.Println(x)
