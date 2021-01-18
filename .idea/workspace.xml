@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1ce86ac-8179-485b-8ccd-e3242f9ee459" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter-15/chapter-15.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter-16/chapter-16.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter-17/chapter-17.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter-18/chapter-17.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter-19/chapter-19.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter-20/chapter-20.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter-21/chapter-21.go" afterDir="false" />
+    <list default="true" id="d1ce86ac-8179-485b-8ccd-e3242f9ee459" name="Default Changelist" comment="feat: 协程">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter-1/chapter-1.go" beforeDir="false" afterPath="$PROJECT_DIR$/chapter-1/chapter-1.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter-13/chapter-13.go" beforeDir="false" afterPath="$PROJECT_DIR$/chapter-13/chapter-13.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter-9/chapter-9.go" beforeDir="false" afterPath="$PROJECT_DIR$/chapter-9/chapter-9.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter-18/chapter-17.go" beforeDir="false" afterPath="$PROJECT_DIR$/chapter-18/chapter-17.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +73,7 @@
       <recent name="E:\webwww\learn-golang" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build chapter-17.go">
+  <component name="RunManager" selected="Go Build.go build chapter-17.go (1)">
     <configuration name="go build chapter-15.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learn-golang" />
       <working_directory value="$PROJECT_DIR$" />
@@ -99,6 +90,14 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build chapter-17.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="learn-golang" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/chapter-18/chapter-17.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build chapter-17.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learn-golang" />
       <working_directory value="$PROJECT_DIR$" />
@@ -109,6 +108,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build chapter-17.go (1)" />
         <item itemvalue="Go Build.go build chapter-17.go" />
         <item itemvalue="Go Build.go build chapter-16.go" />
         <item itemvalue="Go Build.go build chapter-15.go" />
@@ -172,6 +172,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 协程" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 协程" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/chapter-7/chapter-7.go">
