@@ -35,6 +35,27 @@ func main() {
 	sn := make(chan<- int)
 	go sendData(sn)
 	//fmt.Println(<-sn)
+
+	donex := make(chan int)
+
+	go product(donex)
+
+	//for{
+	//	v,ok:=<- donex
+	//	if ok==false{
+	//		break
+	//	}
+	//	fmt.Println(v,ok)
+	//}
+	for v := range donex {
+		fmt.Println("Received ", v)
+	}
+}
+func product(done chan int) {
+	for i := 0; i <= 10; i++ {
+		done <- i
+	}
+	close(done)
 }
 func sendData(sendch chan<- int) {
 	sendch <- 10
